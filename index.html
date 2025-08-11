@@ -1,124 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinusoid World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-
-<style>
-    body {background-color: lightblue;}
-
-    .button {
-        background-color: #1effdd;
-        border: 1px solid#008d86;
-        outline-width: thin;
-        padding: 0.5%;
-    }
-
-    .button-small {
-        background-color: #1effdd;
-        border: 1px solid#008d86;
-        outline-width: thin;
-        padding: 0%;
-        height: 50px;
-        width: 50px;
-    }
-</style>
-
-<h1>penusoida clicker</h1>
-<p>i dont know what to put here so enjoy clicker</p>
-<p id="demo"></p>
-
-
-
-<script>
-    var inc = 1;
-    var incc = 0;
-    var x = 0;
-    var dn = "f";
-    function fun() {
-        x += inc;
-        document.getElementById("demo").innerHTML = "u tebya"+" "+x+" "+"pinubaksav";
-    }
-    function bms() {
-        var que = prompt("skok raz kupit (cheslo ili maximum)", "1");
-        if (que == "maximum") {
-            que = 1;
-            while (que*50 <= x){
-                console.log(que)
-                que++;
-            }
-        } else {
-            if (x > 50*que-1) {
-                x -= 50*que;
-                for (let i = 0; i < que; i++) {
-                    document.getElementById("demo").innerHTML = "u tebya"+" "+x+" "+"pinubaksav";
-                    inc++;
-                }
-            }
-        }
-    }
+    <img src="pinusoida.jfif" alt="Pinusoid image">
+    <audio src="888042_The-Angel-A-Story-in-15-Pa.mp3" id="music"></audio>
     
-    function nar() {
-       var que = prompt("skok raz kupit (cheslo ili maximum)", "maximum");
-        if (que == "maximum") {
-            que = 1;
-            while (que*50 <= x){
-                console.log(que)
-                que++;
-            }
-            x = x - 50*(que-1);
-            for (let i = 0; i < que-1; i++) {
-                incc++;
-            }
-            inc - 1
-            x + 50
-            document.getElementById("demo").innerHTML = "u tebya"+" "+x+" "+"pinubaksav";
-        } else {
-            if (x > 50*que-1) {
-                x -= 50*que;
-                for (let i = 0; i < que; i++) {
-                    document.getElementById("demo").innerHTML = "u tebya"+" "+x+" "+"pinubaksav";
-                    incc++;
-    
-            }
-            }
-        }
-    }
-    
-    function narinc() {
-      x+=incc;
-      document.getElementById("demo").innerHTML = "u tebya"+" "+x+" "+"pinubaksav"
-    }
-    setInterval(narinc, 1000)
-    
-    
+    <p style="color: orange">privet sexi ti popal v mir pinusoid i drugih starikov po tipu staroy dobroy koshki arc prohodi pogulyay vot fiboanal i muzika i paint tip pinusoid clicker 2
+    </p>
+    <button type="button" id="buffon" class="buttons" onclick="sasi()">фибоанал</button>
+    <button type="button" id="musicButton" class="buttons" onclick="playSong()" style="left: 110px;">музыка играть</button>
 
+    <a href="quiz.html" class="html" style="position: absolute; left: 300px;">quiiiizzzz</a>
 
-    function desc() {
-        switch (dn) {
-            case 0:
-                document.getElementById("desc").innerHTML = "eta tikat nada"
-                break;
-            case 1:
-                document.getElementById("desc").innerHTML = "abizyana chichichi dayot +1 pinubax za clik, no ti ey 50 pinubaksav"
-                break;
-            case 2:
-                document.getElementById("desc").innerHTML = "et pasivni doxod"
-                break;
-        }}
-    function var0(){dn = 0, desc()}
-    function var1(){dn = 1, desc()}
-    function var2(){dn = 2, desc()}
-    
-
-</script>
-
-<p id="desc">navedi na knopku i posmotri cho oan delaet</p>
-
-
-
-
-<button type = "button" onclick = fun() onmouseover = var0() class = "button">tika</button>
-<button type = "button" onclick = bms() onmouseover = var1() class = "button">chizi makaka:aranguatango:</button>
-<button type = "button" onclick = nar() onmouseover = var2() class = "button">narmaldak:</button>
-
+    <script src="randomstuff.js"></script>
+    <script src="fiboanal.js"></script>
 </body>
 </html>
